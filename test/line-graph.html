@@ -9,15 +9,22 @@
     el-node:hover {
       background: blue;
     }
+    svg g line {
+      stroke-width: 10px;
+      stroke: yellow;
+    }
+    el-grafico {
+      --x-axis-major-stroke-opacity: 1;
+    }
     </style>
   </head>
   <body>
-    <el-grafico>
+    <el-grafico type='line-graph'>
       <el-title>My Super Cool Graphy</el-title>
-      <el-axis slot="y" min=-800 max=600 major=100 minor=50>
+      <el-axis slot="y" min=-800 max=600 major=200 minor=50>
         <label>Da USD</label>
       </el-axis>
-      <el-axis slot="x" min=1920 max=2020 major=40 minor=20>
+      <el-axis slot="x" min=1920 max=2020 major=10 minor=5>
         <label>Da Year</label>
       </el-axis>
       <el-data style="stroke:red; fill: red;">
@@ -27,7 +34,7 @@
         <el-node x=1960 y=300>Bb</el-node>
         <el-node x=2019 y=600>Bc</el-node>
       </el-data>
-      <el-data style="fill: blue;">
+      <el-data style="stroke: blue; fill: blue;">
         <label>Somefin</label>
         <legend>Ay</legend>
         <el-node x=1940 y=-400>1940</el-node>
