@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <script type='text/javascript' src='../el-grafico.js'></script>
+    <style type='text/css'>
+    el-node {
+      border: 1px solid green;
+    }
+    el-node:hover {
+      background: blue;
+    }
+    </style>
+  </head>
+  <body>
+    <el-grafico>
+      <el-title>My Super Cool Graphy</el-title>
+      <el-axis slot="y" min=-800 max=600 major=100 minor=50>
+        <label>Da USD</label>
+      </el-axis>
+      <el-axis slot="x" min=1920 max=2020 major=40 minor=20>
+        <label>Da Year</label>
+      </el-axis>
+      <el-data style="stroke:red; fill: red;">
+        <label>Else</label>
+        <legend>Ye</legend>
+        <el-node x=1920 y=-700>Ba</el-node>
+        <el-node x=1960 y=300>Bb</el-node>
+        <el-node x=2019 y=600>Bc</el-node>
+      </el-data>
+      <el-data style="fill: blue;">
+        <label>Somefin</label>
+        <legend>Ay</legend>
+        <el-node x=1940 y=-400>1940</el-node>
+        <el-node x=1980 y=-400>1980</el-node>
+        <el-node x=1960 y=-200>1960</el-node>
+        <el-node x=2020 y=600>2020</el-node>
+      </el-data>
+
+    </el-grafico>
+  </body>
+</html>
