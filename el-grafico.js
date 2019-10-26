@@ -250,6 +250,7 @@ class ElData extends HTMLElement {
       attributeOldValue: true,
       characterDataOldValue: true,
       childList: true,
+      subtree: true,
     })
     if (!this.graph) {
       let svg = this.parentNode.shadowRoot.querySelector('svg')
